@@ -9,7 +9,7 @@
         android:layout_height="fill_parent"
         android:background="@drawable/shadow"
         android:orientation="vertical"
-        android:padding="20dp"
+        android:padding="15dp"
         >
 
         <LinearLayout
@@ -23,9 +23,10 @@
                 android:id="@+id/imageView"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
-                android:src="@drawable/appmedis"/>
+                android:src="@drawable/app_medis"/>
 
             <TextView
+                android:layout_marginTop="10dp"
                 android:id="@+id/textView2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -39,7 +40,7 @@
             android:id="@+id/preview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="10dp"
             android:text="Preview"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textColor="@color/black"/>
@@ -85,8 +86,8 @@
             android:id="@+id/buttonAppMedis"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:background="@color/colorPrimary"
+            android:layout_marginTop="20dp"
+            android:background="@color/primary"
             android:text="Luncurkan"
             android:textColor="@android:color/white"/>
 
