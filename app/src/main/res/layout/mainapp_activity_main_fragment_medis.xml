@@ -23,7 +23,7 @@
                 android:id="@+id/imageView"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
-                android:src="@drawable/app_medis"/>
+                android:src="@drawable/logomedis"/>
 
             <TextView
                 android:layout_marginTop="10dp"

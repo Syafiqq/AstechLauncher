@@ -18,8 +18,9 @@
             android:id="@+id/appmedis_mainpage_toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="@drawable/xml_appbar_shadow_shape"
+            android:background="@color/primary"
             app:popupTheme="@style/AppTheme.PopupOverlay">
+            <!--android:background="@drawable/xml_appbar_shadow_shape"-->
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -34,13 +35,14 @@
                     android:layout_marginRight="4dp"
                     android:contentDescription="@string/appmedis_toolbar_icon_desc"
                     android:padding="2dp"
-                    android:src="@drawable/app_medis"/>
+                    android:src="@drawable/logomedis"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:text="@string/appmedis_mainpage_title"
+                    android:textColor="@color/white"
                     android:textSize="20sp"/>
             </LinearLayout>
         </android.support.v7.widget.Toolbar>

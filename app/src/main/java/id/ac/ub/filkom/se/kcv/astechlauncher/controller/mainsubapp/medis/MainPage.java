@@ -120,7 +120,7 @@ public class MainPage extends AppCompatActivity
             }
         });
 
-        this.applicationLogoSwitcher.setImageResource(R.drawable.appmedis_logo);
+        this.applicationLogoSwitcher.setImageResource(R.drawable.logomedis);
     }
 
     @Override
@@ -194,23 +194,23 @@ public class MainPage extends AppCompatActivity
                     if(pressedButton == this.buttonAcupuncture)
                     {
                         this.applicationShortDescriptionSwitcher.setText(super.getResources().getString(R.string.appmedis_acupuncture_short_description));
-                        this.applicationLogoSwitcher.setImageResource(R.drawable.appmedis_acupuncture_logo);
+                        this.applicationLogoSwitcher.setImageResource(R.drawable.logo_akupuntur);
                     }
                     else if(pressedButton == this.buttonStroke)
                     {
                         this.applicationShortDescriptionSwitcher.setText(super.getResources().getString(R.string.appmedis_stroke_short_description));
-                        this.applicationLogoSwitcher.setImageResource(R.drawable.appmedis_stroke_logo);
+                        this.applicationLogoSwitcher.setImageResource(R.drawable.logo_stroke);
                     }
                     else if(pressedButton == this.buttonHeart)
                     {
                         this.applicationShortDescriptionSwitcher.setText(super.getResources().getString(R.string.appmedis_heart_short_description));
-                        this.applicationLogoSwitcher.setImageResource(R.drawable.appmedis_heart_logo);
+                        this.applicationLogoSwitcher.setImageResource(R.drawable.logo_heart);
                     }
                 }
                 else
                 {
                     this.applicationShortDescriptionSwitcher.setText(super.getResources().getString(R.string.appmedis_short_description));
-                    this.applicationLogoSwitcher.setImageResource(R.drawable.appmedis_logo);
+                    this.applicationLogoSwitcher.setImageResource(R.drawable.logomedis);
                 }
             }
             else
@@ -231,13 +231,13 @@ public class MainPage extends AppCompatActivity
                 if(pressedButton == this.buttonAcupuncture)
                 {
                     this.applicationShortDescriptionSwitcher.setText(super.getResources().getString(R.string.appmedis_acupuncture_short_description));
-                    this.applicationLogoSwitcher.setImageResource(R.drawable.appmedis_acupuncture_logo);
+                    this.applicationLogoSwitcher.setImageResource(R.drawable.logo_akupuntur);
                     Toast.makeText(this, "Acupuncture Launch", Toast.LENGTH_SHORT).show();
                 }
                 else if(pressedButton == this.buttonStroke)
                 {
                     this.applicationShortDescriptionSwitcher.setText(super.getResources().getString(R.string.appmedis_stroke_short_description));
-                    this.applicationLogoSwitcher.setImageResource(R.drawable.appmedis_stroke_logo);
+                    this.applicationLogoSwitcher.setImageResource(R.drawable.logo_stroke);
                     //Toast.makeText(this, "Stroke Launch", Toast.LENGTH_SHORT).show();
                     Intent intent = super.getPackageManager().getLaunchIntentForPackage("id.ac.ub.filkom.se.kcv.astech.medical.appstroke");
                     if(intent != null)
@@ -256,7 +256,7 @@ public class MainPage extends AppCompatActivity
                 else if(pressedButton == this.buttonHeart)
                 {
                     this.applicationShortDescriptionSwitcher.setText(super.getResources().getString(R.string.appmedis_heart_short_description));
-                    this.applicationLogoSwitcher.setImageResource(R.drawable.appmedis_heart_logo);
+                    this.applicationLogoSwitcher.setImageResource(R.drawable.logo_heart);
                     Toast.makeText(this, "Heart Launch", Toast.LENGTH_SHORT).show();
                 }
             }

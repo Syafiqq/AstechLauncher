@@ -5,6 +5,7 @@ import android.support.v4.content.ContextCompat;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.MenuItem;
 import android.view.View;
 
 import id.ac.ub.filkom.se.kcv.astechlauncher.R;
@@ -27,15 +28,15 @@ public class Helppage extends AppCompatActivity
             actionBar.setDisplayShowHomeEnabled(true);
             actionBar.setDisplayShowTitleEnabled(false);
             toolbar.setContentInsetStartWithNavigation(4);
-            toolbar.setNavigationIcon(ContextCompat.getDrawable(this, R.drawable.appmedis_toolbar_button_back));
-            toolbar.setNavigationOnClickListener(new View.OnClickListener()
-            {
-                @Override
-                public void onClick(View v)
-                {
-                    Helppage.this.onBackButtonPressed();
-                }
-            });
+//            toolbar.setNavigationIcon(ContextCompat.getDrawable(this, R.drawable.appmedis_toolbar_button_back));
+//            toolbar.setNavigationOnClickListener(new View.OnClickListener()
+//            {
+//                @Override
+//                public void onClick(View v)
+//                {
+//                    Helppage.this.onBackButtonPressed();
+//                }
+//            });
         }
     }
 
@@ -48,5 +49,15 @@ public class Helppage extends AppCompatActivity
     {
         super.onBackPressed();
     }
-
+    public boolean onOptionsItemSelected(MenuItem item)
+    {
+        switch(item.getItemId())
+        {
+            case android.R.id.home:
+                //perhaps use intent if needed but i'm sure there's a specific intent action for up you can use to handle
+                this.onBackButtonPressed();
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
 }
