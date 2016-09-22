@@ -15,18 +15,20 @@ import android.widget.Toast;
 import id.ac.ub.filkom.se.kcv.astechlauncher.R;
 
 
-public class Help extends AppCompatActivity {
+public class Help extends AppCompatActivity
+{
     ListView listView;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.mainapp_activity_help);
 
         final Toolbar toolbar = (Toolbar) super.findViewById(R.id.toolbarHelp);
         super.setSupportActionBar(toolbar);
         final ActionBar actionBar = super.getSupportActionBar();
-        if (actionBar != null)
+        if(actionBar != null)
         {
             actionBar.setDisplayHomeAsUpEnabled(true);
             actionBar.setDisplayShowHomeEnabled(true);
@@ -47,7 +49,7 @@ public class Help extends AppCompatActivity {
         listView = (ListView) findViewById(R.id.list);
 
         // Defined Array values to show in ListView
-        String[] values = new String[]{
+        String[] values = new String[] {
                 "Mulai aplikasi",
                 "Memilih aplikasi"
         };
@@ -59,10 +61,12 @@ public class Help extends AppCompatActivity {
         // Assign adapter to ListView
         listView.setAdapter(adapter);
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener()
+        {
 
             @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id)
+            {
 
                 // ListView Clicked item index
                 int itemPosition = position;
@@ -70,7 +74,8 @@ public class Help extends AppCompatActivity {
                 // ListView Clicked item value
                 String itemValue = (String) listView.getItemAtPosition(position);
 
-                switch (itemPosition){
+                switch(itemPosition)
+                {
                     case 0:
                         Intent intent = new Intent(Help.this, HelpLogin.class);
                         startActivity(intent);
@@ -90,7 +95,8 @@ public class Help extends AppCompatActivity {
     }
 
     @Override
-    public void onBackPressed() {
+    public void onBackPressed()
+    {
         super.onBackPressed();
         Intent intent = new Intent(Help.this, MainActivity.class);
         startActivity(intent);
