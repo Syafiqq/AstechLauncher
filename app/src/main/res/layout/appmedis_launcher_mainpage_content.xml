@@ -34,7 +34,7 @@
             android:layout_marginRight="4dp"
             android:layout_marginTop="16dp"
             android:contentDescription="@string/appmedis_avatar_description"
-            android:src="@drawable/appmedis_logo"/>
+            android:src="@drawable/app_medis"/>
 
         <ScrollView
             android:layout_width="match_parent"

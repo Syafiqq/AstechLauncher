@@ -65,15 +65,15 @@ public class MainPage extends AppCompatActivity
             actionBar.setDisplayShowHomeEnabled(true);
             actionBar.setDisplayShowTitleEnabled(false);
             toolbar.setContentInsetStartWithNavigation(4);
-            toolbar.setNavigationIcon(ContextCompat.getDrawable(this, R.drawable.appmedis_toolbar_button_back));
-            toolbar.setNavigationOnClickListener(new View.OnClickListener()
-            {
-                @Override
-                public void onClick(View v)
-                {
-                    MainPage.this.onBackButtonPressed();
-                }
-            });
+//            toolbar.setNavigationIcon(ContextCompat.getDrawable(this, R.drawable.appmedis_toolbar_button_back));
+//            toolbar.setNavigationOnClickListener(new View.OnClickListener()
+//            {
+//                @Override
+//                public void onClick(View v)
+//                {
+//                    MainPage.this.onBackButtonPressed();
+//                }
+//            });
         }
 
         this.buttonLauncherWrapper = new Button[] {this.buttonAcupuncture, this.buttonStroke, this.buttonHeart};
@@ -145,6 +145,10 @@ public class MainPage extends AppCompatActivity
                 this.onToolbarHelpMenuPressed();
             }
             break;
+            case android.R.id.home:
+                //perhaps use intent if needed but i'm sure there's a specific intent action for up you can use to handle
+                MainPage.this.onBackButtonPressed();
+                return true;
         }
         return super.onOptionsItemSelected(item);
     }

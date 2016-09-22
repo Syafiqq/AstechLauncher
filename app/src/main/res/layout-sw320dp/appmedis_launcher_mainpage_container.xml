@@ -34,7 +34,7 @@
                     android:layout_marginRight="4dp"
                     android:contentDescription="@string/appmedis_toolbar_icon_desc"
                     android:padding="2dp"
-                    android:src="@drawable/action_bar"/>
+                    android:src="@drawable/app_medis"/>
 
                 <TextView
                     android:layout_width="wrap_content"
