@@ -10,7 +10,7 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".controller.mainapp.LoginActivity"
-            android:theme="@style/AppTheme.Dark"/>
+            android:theme="@style/AppTheme.DarkEdited"/>
         <activity
             android:name=".controller.mainapp.MainActivity"
             android:theme="@style/AppTheme.Dark">
@@ -21,10 +21,10 @@
         </activity>
         <activity
             android:name=".controller.mainapp.SignupActivity"
-            android:theme="@style/AppTheme.Dark"/>
+            android:theme="@style/AppTheme.DarkEdited"/>
         <activity
             android:name=".controller.mainapp.About"
-            android:theme="@style/AppTheme.Dark"/>
+            android:theme="@style/AppTheme.DarkEdited"/>
         <activity
             android:name=".controller.mainapp.Help"
             android:label="Help"
