@@ -8,12 +8,61 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".controller.mainapp.LoginActivity"
+            android:theme="@style/AppTheme.Dark"/>
+        <activity
+            android:name=".controller.mainapp.MainActivity"
+            android:theme="@style/AppTheme.Dark">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
-
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".controller.mainapp.SignupActivity"
+            android:theme="@style/AppTheme.Dark"/>
+        <activity
+            android:name=".controller.mainapp.About"
+            android:theme="@style/AppTheme.Dark"/>
+        <activity
+            android:name=".controller.mainapp.Help"
+            android:label="Help"
+            android:parentActivityName=".controller.mainapp.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".controller.mainapp.MainActivity"/>
+        </activity>
+        <activity
+            android:name=".controller.mainapp.HelpLogin"
+            android:label="Help Login"/>
+
+        <!--activity launcher main sub app-->
+        <activity
+            android:name=".controller.mainsubapp.medis.MainPage"
+            android:label="@string/launcher_name"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".controller.mainsubapp.medis.Helppage"
+            android:label="@string/appmedis_helppage_title"
+            android:parentActivityName=".controller.mainsubapp.medis.MainPage"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".controller.mainsubapp.medis.MainPage"/>
+        </activity>
+        <activity
+            android:name=".controller.mainapp.HelpPenggunaan"
+            android:label="Help Penggunaan"/>
+        <activity
+            android:name=".controller.mainsubapp.medis.AboutUsPage"
+            android:label="@string/appmedis_aboutuspage_title"
+            android:parentActivityName=".controller.mainsubapp.medis.MainPage"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".controller.mainsubapp.medis.MainPage"/>
         </activity>
     </application>
 
