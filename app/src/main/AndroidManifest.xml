@@ -64,6 +64,12 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".controller.mainsubapp.medis.MainPage"/>
         </activity>
+        <activity
+            android:name="id.ac.ub.filkom.sekcv.appstroke.controller.MainPage"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
     </application>
 
 </manifest>
