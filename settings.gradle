@@ -1,1 +1,3 @@
-include ':app'
+include ':app', ':MaterialEditText', ':appstroke'
+project(':MaterialEditText').projectDir = new File(settingsDir, '../MaterialEditText/library')
+project(':appstroke').projectDir = new File(settingsDir, '../Lab_KCV_AppStroke/app')
