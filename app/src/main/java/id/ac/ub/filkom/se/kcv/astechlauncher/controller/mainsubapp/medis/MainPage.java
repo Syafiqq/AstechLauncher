@@ -234,20 +234,20 @@ public class MainPage extends AppCompatActivity
                 {
                     this.applicationShortDescriptionSwitcher.setText(super.getResources().getString(R.string.appmedis_stroke_short_description));
                     this.applicationLogoSwitcher.setImageResource(R.drawable.appmedis_stroke_logo);
-                    Toast.makeText(this, "Stroke Launch", Toast.LENGTH_SHORT).show();
-                    //                    Intent intent = super.getPackageManager().getLaunchIntentForPackage("id.ac.ub.filkom.sekcv.astech.controller.main_sub_app");
-                    //                    if(intent != null)
-                    //                    {
-                    //                        // We found the activity now start the activity
-                    //                        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                    //                        super.startActivity(intent);
-                    //                        super.finish();
-                    //                    }
-                    //                    else
-                    //                    {
-                    //                        // Bring user to the market or let them choose an app?
-                    //                        Toast.makeText(this, "Cannot find app", Toast.LENGTH_LONG).show();
-                    //                    }
+                    //Toast.makeText(this, "Stroke Launch", Toast.LENGTH_SHORT).show();
+                    Intent intent = super.getPackageManager().getLaunchIntentForPackage("id.ac.ub.filkom.se.kcv.astech.medical.appstroke");
+                    if(intent != null)
+                    {
+                        // We found the activity now start the activity
+                        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        super.startActivity(intent);
+                        super.finish();
+                    }
+                    else
+                    {
+                        // Bring user to the market or let them choose an app?
+                        Toast.makeText(this, "Cannot find app", Toast.LENGTH_LONG).show();
+                    }
                 }
                 else if(pressedButton == this.buttonHeart)
                 {
