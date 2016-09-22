@@ -6,7 +6,7 @@ android {
     buildToolsVersion "24.0.2"
 
     defaultConfig {
-        applicationId "id.ac.ub.filkom.se.kcv.astechlauncher"
+        applicationId "id.ac.ub.filkom.se.kcv.astech.astechlauncher"
         minSdkVersion 16
         targetSdkVersion 24
         versionCode 1
