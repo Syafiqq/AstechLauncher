@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">AstechLauncher</string>
+    <string name="appmedis_toolbar_icon_desc">Apllication Logo</string>
+    <string name="appmedis_mainpage_title">App Medis</string>
+    <string name="appmedis_toolbar_menu_help">Help</string>
+    <string name="appmedis_toolbar_menu_about_us">About Us</string>
+    <string name="appmedis_toolbar_menu_back">Back</string>
+    <string name="appmedis_short_description">App Medis helps you in control of your health. Enter your health data and observe your health.</string>
+    <string name="appmedis_avatar_description">App Medis Icon</string>
+    <string name="appmedis_button_accupunture_description">Acupuncture Logo Launcher</string>
+    <string name="appmedis_button_stroke_description">Stroke Logo Launcher</string>
+    <string name="appmedis_button_heart_description">Heart Logo Launcher</string>
+    <string name="appmedis_button_stroke_title">Stroke</string>
+    <string name="appmedis_button_heart_title">Heart</string>
+    <string name="appmedis_button_accupunture_title">Acupuncture</string>
+    <string name="appmedis_helppage_title">Help</string>
+    <string name="appmedis_aboutuspage_title">About Us</string>
+    <string name="appmedis_acupuncture_short_description">App Medis Acupuncture helps you in control of your health. Enter your health data and observe your health.</string>
+    <string name="appmedis_stroke_short_description">App Medis Stroke helps you in control of your health. Enter your health data and observe your health.</string>
+    <string name="appmedis_heart_short_description">App Medis Heart helps you in control of your health. Enter your health data and observe your health.</string>
+    <string name="launcher_name">App Medis Launcher</string>
 </resources>
