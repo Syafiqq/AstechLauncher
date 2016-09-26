@@ -10,7 +10,7 @@
         android:id="@+id/toolbarHelp"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="@drawable/xml_appbar_shadow_shape"
+        android:background="@color/primary"
         app:popupTheme="@style/AppTheme.PopupOverlay">
 
         <LinearLayout
