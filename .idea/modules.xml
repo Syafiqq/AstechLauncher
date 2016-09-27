@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AstechLauncher.iml" filepath="$PROJECT_DIR$/AstechLauncher.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lab_KCV_AstechLauncher.iml" filepath="$PROJECT_DIR$/Lab_KCV_AstechLauncher.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
