@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Astech</string>
+    <string name="astech_launcher_app_name">Astech</string>
     <string name="appmedis_toolbar_icon_desc">Apllication Logo</string>
     <string name="appmedis_mainpage_title">App Medis</string>
     <string name="appmedis_toolbar_menu_help">Help</string>
