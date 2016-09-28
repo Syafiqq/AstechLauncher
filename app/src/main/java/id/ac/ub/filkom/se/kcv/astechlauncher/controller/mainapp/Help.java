@@ -13,6 +13,7 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import id.ac.ub.filkom.se.kcv.astechlauncher.R;
+import id.ac.ub.filkom.se.kcv.astechlauncher.controller.mainsubapp.medis.MainPage;
 
 
 public class Help extends AppCompatActivity
@@ -34,16 +35,16 @@ public class Help extends AppCompatActivity
             actionBar.setDisplayShowHomeEnabled(true);
             actionBar.setDisplayShowTitleEnabled(false);
             toolbar.setContentInsetStartWithNavigation(4);
-            toolbar.setNavigationIcon(ContextCompat.getDrawable(this, R.drawable.appmedis_toolbar_button_back));
-            toolbar.setNavigationOnClickListener(new View.OnClickListener()
-            {
-                @Override
-                public void onClick(View v)
-                {
-                    Intent intent = new Intent(Help.this, MainActivity.class);
-                    startActivity(intent);
-                }
-            });
+//            toolbar.setNavigationIcon(ContextCompat.getDrawable(this, R.drawable.appmedis_toolbar_button_back));
+//            toolbar.setNavigationOnClickListener(new View.OnClickListener()
+//            {
+//                @Override
+//                public void onClick(View v)
+//                {
+//                    Intent intent = new Intent(Help.this, MainActivity.class);
+//                    startActivity(intent);
+//                }
+//            });
         }
 
         listView = (ListView) findViewById(R.id.list);
@@ -84,6 +85,10 @@ public class Help extends AppCompatActivity
                         Intent penggunaan = new Intent(Help.this, HelpPenggunaan.class);
                         startActivity(penggunaan);
                         break;
+                    case android.R.id.home:
+                        //perhaps use intent if needed but i'm sure there's a specific intent action for up you can use to handle
+                        Help.this.onBackButtonPressed();
+                        break;
                     default:
                         Toast.makeText(getApplicationContext(), "Position :" + itemPosition + "  ListItem : " + itemValue, Toast.LENGTH_LONG)
                              .show();
@@ -94,11 +99,13 @@ public class Help extends AppCompatActivity
         });
     }
 
+    private void onBackButtonPressed() {
+        this.onBackPressed();
+    }
     @Override
     public void onBackPressed()
     {
         super.onBackPressed();
-        Intent intent = new Intent(Help.this, MainActivity.class);
-        startActivity(intent);
+        finish();
     }
 }
