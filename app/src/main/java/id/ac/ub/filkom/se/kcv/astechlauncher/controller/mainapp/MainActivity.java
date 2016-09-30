@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity implements Medis.OnFragmentI
         setContentView(R.layout.mainapp_activity_main);
 
         SharedPreferences pref = getApplicationContext().getSharedPreferences("CekLogin", MODE_WORLD_READABLE); // 0 - for private mode
-        if(pref.getBoolean("login", true))
+        if(pref.getBoolean("login", true) && pref.getBoolean("tamu", true))
         {
             Intent intent = new Intent(this, LoginActivity.class);
             startActivity(intent);

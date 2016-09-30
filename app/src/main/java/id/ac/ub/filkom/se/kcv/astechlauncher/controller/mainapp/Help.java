@@ -109,10 +109,6 @@ public class Help extends AppCompatActivity
         super.onBackPressed();
         finish();
     }
-    private void onBackButtonPressed()
-    {
-        super.onBackPressed();
-    }
     public boolean onOptionsItemSelected(MenuItem item)
     {
         switch(item.getItemId())
