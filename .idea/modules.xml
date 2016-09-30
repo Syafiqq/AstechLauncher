@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AstechLauncher.iml" filepath="$PROJECT_DIR$/AstechLauncher.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../MaterialEditText/library/MaterialEditText.iml" filepath="$PROJECT_DIR$/../MaterialEditText/library/MaterialEditText.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../AppStroke/app/appstroke.iml" filepath="$PROJECT_DIR$/../AppStroke/app/appstroke.iml" />
     </modules>
   </component>
 </project>
