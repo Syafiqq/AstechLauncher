@@ -52,8 +52,7 @@ public class HelpPenggunaan extends AppIntro2
     public void onSkipPressed(Fragment currentFragment)
     {
         super.onSkipPressed(currentFragment);
-        Intent intent = new Intent(HelpPenggunaan.this, Help.class);
-        startActivity(intent);
+        finish();
         // Do something when users tap on Skip button.
     }
 
@@ -61,8 +60,7 @@ public class HelpPenggunaan extends AppIntro2
     public void onDonePressed(Fragment currentFragment)
     {
         super.onDonePressed(currentFragment);
-        Intent intent = new Intent(HelpPenggunaan.this, Help.class);
-        startActivity(intent);
+        finish();
         // Do something when users tap on Done button.
     }
 
