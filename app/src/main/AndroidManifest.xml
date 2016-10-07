@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:tools="http://schemas.android.com/tools"
-    package="id.ac.ub.filkom.se.kcv.astechlauncher"
-          xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest package="id.ac.ub.filkom.se.kcv.astechlauncher"
+          xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools">
 
     <application
         android:allowBackup="true"
@@ -72,6 +72,18 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"
             tools:replace="android:label">
+        </activity>
+        <activity
+            android:name="id.ac.ub.filkom.sekcv.appstroke.controller.HelpPage"
+            android:label="@string/helppage_toolbar_title"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name="id.ac.ub.filkom.sekcv.appstroke.controller.AboutUsPage"
+            android:label="@string/aboutuspage_toolbar_title"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
         </activity>
     </application>
 
