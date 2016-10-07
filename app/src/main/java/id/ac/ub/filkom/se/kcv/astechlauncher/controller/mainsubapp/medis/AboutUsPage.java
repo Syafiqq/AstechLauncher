@@ -1,12 +1,10 @@
 package id.ac.ub.filkom.se.kcv.astechlauncher.controller.mainsubapp.medis;
 
 import android.os.Bundle;
-import android.support.v4.content.ContextCompat;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
-import android.view.View;
 
 import id.ac.ub.filkom.se.kcv.astechlauncher.R;
 
@@ -48,7 +46,9 @@ public class AboutUsPage extends AppCompatActivity
     private void onBackButtonPressed()
     {
         super.onBackPressed();
+        super.finish();
     }
+
     public boolean onOptionsItemSelected(MenuItem item)
     {
         switch(item.getItemId())

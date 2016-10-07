@@ -98,7 +98,6 @@ public class Medis extends Fragment
                 //                }
                 //                Intent intent = new Intent(Medis.super.getContext(), MainPage.class);
                 startActivity(new Intent(Medis.super.getContext(), MainPage.class));
-                Medis.super.getActivity().finish();
             }
         });
         return view;
