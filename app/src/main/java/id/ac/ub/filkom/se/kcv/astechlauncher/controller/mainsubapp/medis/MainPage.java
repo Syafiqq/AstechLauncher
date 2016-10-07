@@ -3,7 +3,6 @@ package id.ac.ub.filkom.se.kcv.astechlauncher.controller.mainsubapp.medis;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.support.v4.content.ContextCompat;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -242,19 +241,6 @@ public class MainPage extends AppCompatActivity {
                 {
                     this.applicationShortDescriptionSwitcher.setText(super.getResources().getString(R.string.appmedis_stroke_short_description));
                     this.applicationLogoSwitcher.setImageResource(R.drawable.logo_stroke);
-                    //Toast.makeText(this, "Stroke Launch", Toast.LENGTH_SHORT).show();
-                    Intent intent = super.getPackageManager().getLaunchIntentForPackage("id.ac.ub.filkom.se.kcv.astech.medical.appstroke");
-                    if (intent != null) {
-                        // We found the activity now start the activity
-                        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                        super.startActivity(intent);
-                        super.finish();
-                    }
-                    else
-                    {
-                        // Bring user to the market or let them choose an app?
-                        Toast.makeText(this, "Cannot find app", Toast.LENGTH_LONG).show();
-                    }*/
                     final Intent intent = new Intent(this, id.ac.ub.filkom.sekcv.appstroke.controller.MainPage.class);
                     super.startActivity(intent);
                     super.finish();
