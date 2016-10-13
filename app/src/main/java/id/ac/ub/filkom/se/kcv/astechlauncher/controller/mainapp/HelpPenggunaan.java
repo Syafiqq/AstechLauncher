@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.widget.ImageView;
 
 import com.github.paolorotolo.appintro.AppIntro2;
 import com.github.paolorotolo.appintro.AppIntroFragment;
@@ -26,7 +27,9 @@ public class HelpPenggunaan extends AppIntro2
         //        addSlide(second_fragment);
         //        addSlide(third_fragment);
         //        addSlide(fourth_fragment);
-
+        ImageView a = new ImageView(this);
+        a.setBackgroundColor(getResources().getColor(R.color.primary));
+        setBackgroundView(a);
         // Instead of fragments, you can also use our default slide
         // Just set a title, description, background and image. AppIntro will do the rest.
         addSlide(AppIntroFragment.newInstance("Memilih aplikasi?", "Anda dapat memilih aplikasi dengan melakukan swipe pada layar kekanan atau kekiri, atau juga anda Anda dapat memilihnya dengan menekan tab masing-masing aplikasi (lihat no 2)", R.drawable.ss1, R.color.amber));

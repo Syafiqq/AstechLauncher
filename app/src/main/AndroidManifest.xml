@@ -38,7 +38,8 @@
         </activity>
         <activity
             android:name=".controller.mainapp.HelpLogin"
-            android:label="Help Login"/>
+            android:label="Help Login"
+            android:theme="@style/AppTheme.NoActionBar"/>
 
         <!--activity launcher main sub app-->
         <activity
@@ -56,7 +57,9 @@
         </activity>
         <activity
             android:name=".controller.mainapp.HelpPenggunaan"
-            android:label="Help Penggunaan"/>
+            android:label="Help Penggunaan"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
         <activity
             android:name=".controller.mainsubapp.medis.AboutUsPage"
             android:label="@string/appmedis_aboutuspage_title"

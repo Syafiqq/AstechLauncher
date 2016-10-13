@@ -47,8 +47,8 @@ public class HelpLogin extends AppIntro2
 
         // Turn vibration on and set intensity.
         // NOTE: you will probably need to ask VIBRATE permisssion in Manifest.
-        setVibrate(true);
-        setVibrateIntensity(30);
+        setVibrate(false);
+//        setVibrateIntensity(30);
     }
 
     @Override
