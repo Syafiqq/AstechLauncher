@@ -1,6 +1,5 @@
 package id.ac.ub.filkom.se.kcv.astechlauncher.controller.mainapp;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
