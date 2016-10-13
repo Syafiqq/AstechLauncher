@@ -1,6 +1,5 @@
 package id.ac.ub.filkom.se.kcv.astechlauncher.controller.mainapp;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -33,7 +32,7 @@ public class HelpLogin extends AppIntro2
         setBackgroundView(a);
         // Instead of fragments, you can also use our default slide
         // Just set a title, description, background and image. AppIntro will do the rest.
-        addSlide(AppIntroFragment.newInstance("Login", "Anda dapat login, jika anda sudah terdaftar di Astech, inputkan email dan password anda pada inputan yang tersedia (lihat no 1 dan 2), dan buat akun baru untuk jika belum mempunyai akun, klik kata create one (lihat no 3) ", R.drawable.login, ContextCompat.getColor(this, ContextCompat.getColor(this, R.color.amber))));
+        addSlide(AppIntroFragment.newInstance("Login", "Anda dapat login, jika anda sudah terdaftar di Astech, inputkan email dan password anda pada inputan yang tersedia (lihat no 1 dan 2), dan buat akun baru untuk jika belum mempunyai akun, klik kata create one (lihat no 3) ", R.drawable.login, ContextCompat.getColor(this, R.color.amber)));
         addSlide(AppIntroFragment.newInstance("Daftar", "Inputkan biodata Anda pada inputan yang tersedia dan klik tombol create account untuk mendaftarkan akun (lihat no 3)", R.drawable.daftar, ContextCompat.getColor(this, R.color.amber)));
         // OPTIONAL METHODS
         // Override bar/separator color.
@@ -48,16 +47,15 @@ public class HelpLogin extends AppIntro2
 
         // Turn vibration on and set intensity.
         // NOTE: you will probably need to ask VIBRATE permisssion in Manifest.
-        setVibrate(true);
-        setVibrateIntensity(30);
+        setVibrate(false);
+        //        setVibrateIntensity(30);
     }
 
     @Override
     public void onSkipPressed(Fragment currentFragment)
     {
         super.onSkipPressed(currentFragment);
-        Intent intent = new Intent(HelpLogin.this, Help.class);
-        startActivity(intent);
+        finish();
         // Do something when users tap on Skip button.
     }
 
@@ -65,8 +63,7 @@ public class HelpLogin extends AppIntro2
     public void onDonePressed(Fragment currentFragment)
     {
         super.onDonePressed(currentFragment);
-        Intent intent = new Intent(HelpLogin.this, Help.class);
-        startActivity(intent);
+        finish();
         // Do something when users tap on Done button.
     }
 
