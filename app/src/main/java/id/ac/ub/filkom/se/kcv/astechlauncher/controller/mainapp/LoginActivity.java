@@ -37,6 +37,8 @@ public class LoginActivity extends AppCompatActivity
     Button   _loginButton;
     @BindView(R.id.link_signup)
     TextView _signupLink;
+    @BindView(R.id.logintamu)
+    TextView _logintamu;
     //    @BindView(R.id.spinner)
     //    Spinner _spinner;
 
@@ -86,6 +88,23 @@ public class LoginActivity extends AppCompatActivity
                 startActivityForResult(intent, REQUEST_SIGNUP);
             }
         });
+
+        _logintamu.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                SharedPreferences        pref   = getApplicationContext().getSharedPreferences("CekLogin", MODE_WORLD_READABLE); // 0 - for private mode
+                SharedPreferences.Editor editor = pref.edit();
+                editor.clear();
+                editor.putBoolean("tamu", false);
+                editor.commit();
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
     }
 
     public void login()
@@ -134,6 +153,7 @@ public class LoginActivity extends AppCompatActivity
                             {
                                 Toast.makeText(getBaseContext(), "Login success", Toast.LENGTH_LONG).show();
                                 onLoginSuccess();
+                                editor.clear();
                                 editor.putBoolean("login", false);
                                 editor.putString("date", cursor.getString(1));
                                 editor.putString("name", cursor.getString(2));
