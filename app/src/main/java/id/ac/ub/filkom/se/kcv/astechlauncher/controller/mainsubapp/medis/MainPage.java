@@ -120,7 +120,7 @@ public class MainPage extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu)
     {
-        super.getMenuInflater().inflate(R.menu.appmedis_launcher_appbar_overflow_menu, menu);
+        getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
 
