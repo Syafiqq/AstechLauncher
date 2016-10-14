@@ -12,6 +12,7 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -37,10 +38,10 @@ public class LoginActivity extends AppCompatActivity
     Button   _loginButton;
     @BindView(R.id.link_signup)
     TextView _signupLink;
-    @BindView(R.id.logintamu)
-    TextView _logintamu;
-    //    @BindView(R.id.spinner)
-    //    Spinner _spinner;
+    @BindView(R.id.btn_login_guest)
+    Button _logintamu;
+    @BindView(R.id.layoutButton)
+    LinearLayout _layout;
 
     @Override
     public void onCreate(Bundle savedInstanceState)
@@ -48,6 +49,11 @@ public class LoginActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.mainapp_activity_login);
         ButterKnife.bind(this);
+
+//        int scrWidth  = getWindowManager().getDefaultDisplay().getWidth();
+
+        _loginButton.setWidth(_layout.getWidth()/2);
+        _logintamu.setWidth((_layout.getWidth()/2)-10);
 
         db = new Database(this);
 
