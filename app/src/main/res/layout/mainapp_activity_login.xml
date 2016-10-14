@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:fitsSystemWindows="true">
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fitsSystemWindows="true">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,7 +17,7 @@
             android:layout_height="170dp"
             android:layout_gravity="center_horizontal"
             android:layout_margin="30dp"
-            android:src="@drawable/logo" />
+            android:src="@drawable/logo"/>
 
         <!--  Email Label -->
         <android.support.design.widget.TextInputLayout
@@ -31,7 +31,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Email"
-                android:inputType="textEmailAddress" />
+                android:inputType="textEmailAddress"/>
         </android.support.design.widget.TextInputLayout>
 
         <!--  Password Label -->
@@ -46,7 +46,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Password"
-                android:inputType="textPassword" />
+                android:inputType="textPassword"/>
         </android.support.design.widget.TextInputLayout>
 
         <!--//pilih bahasa, tapi tahap 2-->
@@ -69,20 +69,21 @@
             android:layout_marginBottom="10dp"
             android:layout_marginTop="24dp"
             android:padding="12dp"
-            android:text="Login" />
+            android:text="Login"/>
 
         <TextView
             android:id="@+id/link_signup"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
             android:gravity="center"
             android:text="No account yet? Create one"
-            android:textSize="16sp" />
+            android:textSize="16sp"/>
 
         <TextView
+            android:id="@+id/logintamu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/logintamu"
             android:gravity="center"
             android:text="Login as Guest"
             android:textSize="16sp"/>

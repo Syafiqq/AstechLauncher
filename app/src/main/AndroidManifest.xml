@@ -9,7 +9,7 @@
         android:label="@string/astech_launcher_app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        tools:replace="android:label">>
+        tools:replace="android:label">
         <activity
             android:name=".controller.mainapp.LoginActivity"
             android:theme="@style/AppTheme.DarkEdited"/>

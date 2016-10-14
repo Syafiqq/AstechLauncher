@@ -36,16 +36,6 @@ public class Help extends AppCompatActivity
             actionBar.setDisplayShowHomeEnabled(true);
             actionBar.setDisplayShowTitleEnabled(false);
             toolbar.setContentInsetStartWithNavigation(4);
-//            toolbar.setNavigationIcon(ContextCompat.getDrawable(this, R.drawable.appmedis_toolbar_button_back));
-//            toolbar.setNavigationOnClickListener(new View.OnClickListener()
-//            {
-//                @Override
-//                public void onClick(View v)
-//                {
-//                    Intent intent = new Intent(Help.this, MainActivity.class);
-//                    startActivity(intent);
-//                }
-//            });
         }
 
         listView = (ListView) findViewById(R.id.list);
@@ -100,15 +90,18 @@ public class Help extends AppCompatActivity
         });
     }
 
-    private void onBackButtonPressed() {
+    private void onBackButtonPressed()
+    {
         this.onBackPressed();
     }
+
     @Override
     public void onBackPressed()
     {
         super.onBackPressed();
         finish();
     }
+
     public boolean onOptionsItemSelected(MenuItem item)
     {
         switch(item.getItemId())
