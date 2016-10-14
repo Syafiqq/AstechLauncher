@@ -90,8 +90,8 @@
             android:id="@+id/buttonAppMedis"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
             android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
             android:background="@color/primary"
             android:text="Luncurkan"
             android:textColor="@android:color/white"/>

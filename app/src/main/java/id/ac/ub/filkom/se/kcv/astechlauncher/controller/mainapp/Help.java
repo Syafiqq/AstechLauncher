@@ -2,7 +2,6 @@ package id.ac.ub.filkom.se.kcv.astechlauncher.controller.mainapp;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.content.ContextCompat;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -14,7 +13,6 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import id.ac.ub.filkom.se.kcv.astechlauncher.R;
-import id.ac.ub.filkom.se.kcv.astechlauncher.controller.mainsubapp.medis.MainPage;
 
 
 public class Help extends AppCompatActivity
