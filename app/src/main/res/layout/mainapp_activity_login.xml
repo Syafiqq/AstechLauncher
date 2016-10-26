@@ -17,7 +17,7 @@
             android:layout_height="170dp"
             android:layout_gravity="center_horizontal"
             android:layout_margin="30dp"
-            android:src="@drawable/logo"/>
+            android:src="@drawable/logo_baru"/>
 
         <!--  Email Label -->
         <android.support.design.widget.TextInputLayout
@@ -60,37 +60,14 @@
         <!--android:layout_alignParentTop="true"-->
         <!--android:layout_alignParentLeft="true"-->
         <!--android:layout_alignParentStart="true" />-->
-
-        <LinearLayout
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_login"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp"
             android:padding="12dp"
-            android:text="Login"
-            android:layout_marginTop="10dp"
-            android:id="@+id/layoutButton"
-            android:orientation="horizontal"
-            >
-            <android.support.v7.widget.AppCompatButton
-                android:id="@+id/btn_login"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="15dp"
-                android:padding="12dp"
-                android:height="20dp"
-                android:text="Login" />
-
-            <android.support.v7.widget.AppCompatButton
-                android:id="@+id/btn_login_guest"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="15dp"
-                android:layout_marginLeft="10dp"
-                android:padding="12dp"
-                android:height="20dp"
-                android:text="Login as guest" />
-
-        </LinearLayout>
+            android:height="20dp"
+            android:text="Login" />
 
 
         <TextView
