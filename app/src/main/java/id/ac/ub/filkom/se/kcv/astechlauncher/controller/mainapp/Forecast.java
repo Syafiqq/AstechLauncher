@@ -75,7 +75,7 @@ public class Forecast extends Fragment
     {
         // Inflate the layout for this fragment
         View   view   = inflater.inflate(R.layout.mainapp_activity_main_fragment_forecast, container, false);
-        Button button = (Button) view.findViewById(R.id.buttonAppMedis);
+        Button button = (Button) view.findViewById(R.id.buttonAppForcast);
         button.setOnClickListener(new View.OnClickListener()
         {
             @Override
