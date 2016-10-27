@@ -104,7 +104,7 @@
                 android:drawableTop="@drawable/prediksi"
                 android:gravity="bottom|center"
                 android:padding="8dp"
-                android:text="@string/appmedis_button_stroke_title"
+                android:text="@string/appforcast_button_prediksi_title"
                 android:textSize="10sp"
                 />
         </RelativeLayout>
