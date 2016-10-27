@@ -32,8 +32,8 @@ public class HelpLogin extends AppIntro2
         setBackgroundView(a);
         // Instead of fragments, you can also use our default slide
         // Just set a title, description, background and image. AppIntro will do the rest.
-        addSlide(AppIntroFragment.newInstance("Login", "Anda dapat login, jika anda sudah terdaftar di Astech, inputkan email dan password anda pada inputan yang tersedia (lihat no 1 dan 2), dan buat akun baru untuk jika belum mempunyai akun, klik kata create one (lihat no 3) ", R.drawable.login, ContextCompat.getColor(this, R.color.amber)));
-        addSlide(AppIntroFragment.newInstance("Daftar", "Inputkan biodata Anda pada inputan yang tersedia dan klik tombol create account untuk mendaftarkan akun (lihat no 3)", R.drawable.daftar, ContextCompat.getColor(this, R.color.amber)));
+        addSlide(AppIntroFragment.newInstance("Login", "Anda dapat login, jika anda sudah terdaftar di Astech, inputkan email dan password anda pada inputan yang tersedia (lihat no 1 dan 2), dan buat akun baru untuk jika belum mempunyai akun, klik kata create one (lihat no 3) ", R.drawable.login, ContextCompat.getColor(this, R.color.primary_dark)));
+        addSlide(AppIntroFragment.newInstance("Daftar", "Inputkan biodata Anda pada inputan yang tersedia dan klik tombol create account untuk mendaftarkan akun (lihat no 3)", R.drawable.daftar, ContextCompat.getColor(this, R.color.primary_dark)));
         // OPTIONAL METHODS
         // Override bar/separator color.
         //        setBarColor(Color.parseColor("#3F51B5"));

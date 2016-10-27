@@ -22,6 +22,8 @@
 
     <!--appForcast-->
     <string name="appforcast_toolbar_icon_desc">Application Logo</string>
+    <string name="appforcast_short_description">App Forcast helps you in providing financial information. Run the application and control your finances.</string>
+    <string name="appforcast_avatar_description">App Forcast Icon</string>
     <string name="appforcast_mainpage_title">App Forcast</string>
     <string name="appforcast_button_saham_description">Holding Logo Launcher</string>
     <string name="appforcast_button_prediksi_description">Prediction Logo Launcher</string>

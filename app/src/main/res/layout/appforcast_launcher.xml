@@ -30,16 +30,16 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"/>
 
-        <!--        <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginBottom="4dp"
-                    android:layout_marginLeft="4dp"
-                    android:layout_marginRight="4dp"
-                    android:layout_marginTop="16dp"
-                    android:contentDescription="@string/appmedis_avatar_description"
-                    android:src="@drawable/appmedis_logo"/>-->
+        <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:layout_marginBottom="4dp"-->
+        <!--android:layout_marginLeft="4dp"-->
+        <!--android:layout_marginRight="4dp"-->
+        <!--android:layout_marginTop="16dp"-->
+        <!--android:contentDescription="@string/appmedis_avatar_description"-->
+        <!--android:src="@drawable/appforcast"/>-->
 
         <ScrollView
             android:layout_width="match_parent"
@@ -82,7 +82,7 @@
                 android:drawableTop="@drawable/acupuncture_logo_button"
                 android:gravity="bottom|center"
                 android:padding="8dp"
-                android:text="@string/appmedis_button_accupunture_title"
+                android:text="@string/appforcast_button_minyak_title"
                 android:textSize="10sp"
                 />
         </RelativeLayout>
@@ -129,7 +129,7 @@
                 android:drawableTop="@drawable/heart_logo_button"
                 android:gravity="bottom|center"
                 android:padding="8dp"
-                android:text="@string/appmedis_button_heart_title"
+                android:text="@string/appforcast_button_saham_title"
                 android:textSize="10sp"
                 />
         </RelativeLayout>

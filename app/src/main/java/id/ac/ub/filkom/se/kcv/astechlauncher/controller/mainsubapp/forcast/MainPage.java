@@ -54,10 +54,10 @@ public class MainPage extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        super.setContentView(R.layout.appforcast_launcher);
+        super.setContentView(R.layout.appforcast_container);
         ButterKnife.bind(this);
 
-        final Toolbar toolbar = (Toolbar) super.findViewById(R.id.appmedis_mainpage_toolbar);
+        final Toolbar toolbar = (Toolbar) super.findViewById(R.id.appforcast_mainpage_toolbar);
         super.setSupportActionBar(toolbar);
         final ActionBar actionBar = super.getSupportActionBar();
         if (actionBar != null) {
@@ -96,7 +96,7 @@ public class MainPage extends AppCompatActivity {
             }
         });
 
-        this.applicationShortDescriptionSwitcher.setText(super.getResources().getString(R.string.appmedis_short_description));
+        this.applicationShortDescriptionSwitcher.setText(super.getResources().getString(R.string.appforcast_short_description));
     }
 
     private void setLogoSwictcher() {
@@ -109,12 +109,12 @@ public class MainPage extends AppCompatActivity {
                 lp.setMargins(4, 16, 4, 4);
                 lp.gravity = Gravity.CENTER_HORIZONTAL;
                 myImage.setLayoutParams(lp);
-                myImage.setContentDescription(MainPage.super.getResources().getString(R.string.appmedis_avatar_description));
+                myImage.setContentDescription(MainPage.super.getResources().getString(R.string.appforcast_avatar_description));
                 return myImage;
             }
         });
 
-        this.applicationLogoSwitcher.setImageResource(R.drawable.logomedis);
+        this.applicationLogoSwitcher.setImageResource(R.drawable.appforcast);
     }
 
     @Override
@@ -202,7 +202,7 @@ public class MainPage extends AppCompatActivity {
                     else if(pressedButton == this.buttonPrediksi)
                     {
                         this.applicationShortDescriptionSwitcher.setText(super.getResources().getString(R.string.appforcast_prediksi_short_description));
-                        this.applicationLogoSwitcher.setImageResource(R.drawable.prediksi);
+                        this.applicationLogoSwitcher.setImageResource(R.drawable.prediksi_big_logo);
                     }
                     else if(pressedButton == this.buttonSaham)
                     {
@@ -212,8 +212,8 @@ public class MainPage extends AppCompatActivity {
                 }
                 else
                 {
-                    this.applicationShortDescriptionSwitcher.setText(super.getResources().getString(R.string.appmedis_short_description));
-                    this.applicationLogoSwitcher.setImageResource(R.drawable.logomedis);
+                    this.applicationShortDescriptionSwitcher.setText(super.getResources().getString(R.string.appforcast_short_description));
+                    this.applicationLogoSwitcher.setImageResource(R.drawable.appforcast);
                 }
             }
             else
