@@ -8,6 +8,7 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/astech_launcher_app_name"
         android:supportsRtl="true"
+
         android:theme="@style/AppTheme"
         tools:replace="android:label">
         <activity

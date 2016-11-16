@@ -29,7 +29,7 @@ import id.ac.ub.filkom.se.kcv.astechlauncher.controller.mainapp.About;
 import id.ac.ub.filkom.se.kcv.astechlauncher.controller.mainapp.Help;
 import id.ac.ub.filkom.se.kcv.astechlauncher.controller.mainapp.LoginActivity;
 import id.ac.ub.filkom.se.kcv.astechlauncher.controller.mainapp.MainActivity;
-
+import id.ac.ub.filkom.se.kcv.astechlauncher.*;
 
 public class MainPage extends AppCompatActivity {
     @BindView(R.id.appforcast_button_minyak_launcher)
@@ -203,6 +203,7 @@ public class MainPage extends AppCompatActivity {
                     {
                         this.applicationShortDescriptionSwitcher.setText(super.getResources().getString(R.string.appforcast_prediksi_short_description));
                         this.applicationLogoSwitcher.setImageResource(R.drawable.prediksi_big_logo);
+
                     }
                     else if(pressedButton == this.buttonSaham)
                     {
@@ -241,7 +242,7 @@ public class MainPage extends AppCompatActivity {
                 {
                     this.applicationShortDescriptionSwitcher.setText(super.getResources().getString(R.string.appforcast_prediksi_short_description));
                     this.applicationLogoSwitcher.setImageResource(R.drawable.prediksi);
-                    final Intent intent = new Intent(this, id.ac.ub.filkom.sekcv.appstroke.controller.MainPage.class);
+                    final Intent intent = new Intent(this, id.ac.ub.filkom.se.kcv.appforecast.controller.MainActivity.class);
                     super.startActivity(intent);
                     super.finish();
                 }
