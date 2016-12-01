@@ -17,6 +17,7 @@
         app:theme="@style/ThemeOverlay.AppCompat.Dark">
     </android.support.v7.widget.Toolbar>
 
+
     <com.ogaclejapan.smarttablayout.SmartTabLayout
         android:id="@+id/viewpagertab"
         android:layout_width="match_parent"
