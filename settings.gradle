@@ -1,4 +1,5 @@
-include ':app', ':mte', ':chart', ':appstroke'
+include ':app', ':mte', ':chart', ':appstroke', ':appforecast'
 project(':appstroke').projectDir = new File(settingsDir, '../AppStroke/app')
+project(':appforecast').projectDir = new File(settingsDir, '../AppForcast1/app')
 project(':mte').projectDir = new File(settingsDir, '../MaterialEditText/library')
 project(':chart').projectDir = new File(settingsDir, '../MPAndroidChart/MPChartLib')
