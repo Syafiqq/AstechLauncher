@@ -1,14 +1,17 @@
 package id.ac.ub.filkom.se.kcv.astechlauncher.controller.mainapp;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import id.ac.ub.filkom.se.kcv.astechlauncher.R;
+import id.ac.ub.filkom.se.kcv.astechlauncher.controller.mainsubapp.forcast.MainPage;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -71,7 +74,17 @@ public class Forecast extends Fragment
                              Bundle savedInstanceState)
     {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.mainapp_activity_main_fragment_forecast, container, false);
+        View   view   = inflater.inflate(R.layout.mainapp_activity_main_fragment_forecast, container, false);
+        Button button = (Button) view.findViewById(R.id.buttonAppForcast);
+        button.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                startActivity(new Intent(Forecast.super.getContext(), MainPage.class));
+            }
+        });
+        return view;
     }
 
     // TODO: Rename method, update argument and hook method into UI event

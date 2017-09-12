@@ -8,6 +8,7 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/astech_launcher_app_name"
         android:supportsRtl="true"
+
         android:theme="@style/AppTheme"
         tools:replace="android:label">
         <activity
@@ -47,6 +48,10 @@
             android:label="@string/launcher_name"
             android:theme="@style/AppTheme.NoActionBar"/>
         <activity
+            android:name=".controller.mainsubapp.forcast.MainPage"
+            android:label="@string/launcher_name"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
             android:name=".controller.mainsubapp.medis.Helppage"
             android:label="@string/appmedis_helppage_title"
             android:parentActivityName=".controller.mainsubapp.medis.MainPage"
@@ -70,5 +75,6 @@
                 android:value=".controller.mainsubapp.medis.MainPage"/>
         </activity>
     </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
 
 </manifest>

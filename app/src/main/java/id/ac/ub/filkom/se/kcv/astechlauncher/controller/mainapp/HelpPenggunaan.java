@@ -29,9 +29,9 @@ public class HelpPenggunaan extends AppIntro2
 
         // Instead of fragments, you can also use our default slide
         // Just set a title, description, background and image. AppIntro will do the rest.
-        addSlide(AppIntroFragment.newInstance("Memilih aplikasi?", "Anda dapat memilih aplikasi dengan melakukan swipe pada layar kekanan atau kekiri, atau juga anda Anda dapat memilihnya dengan menekan tab masing-masing aplikasi (lihat no 2)", R.drawable.ss1, ContextCompat.getColor(this, R.color.amber)));
-        addSlide(AppIntroFragment.newInstance("Menjalankan aplikasi", "Anda dapat menjalankan aplikasi dengan menekan tombol jalankan pada layar masing-masing aplikasi (lihat no 3), ", R.drawable.ss1, ContextCompat.getColor(this, R.color.amber)));
-        addSlide(AppIntroFragment.newInstance("Memilih menu", "Untuk melihat menu, Anda dapat memilih triple dot pada pojok kanan atas (lihat no 1), menu tersebut juga berfungsi untuk logout dan keluar dari aplikasi", R.drawable.ss1, ContextCompat.getColor(this, R.color.amber)));
+        addSlide(AppIntroFragment.newInstance("Memilih aplikasi?", "Anda dapat memilih aplikasi dengan melakukan swipe pada layar kekanan atau kekiri, atau juga anda Anda dapat memilihnya dengan menekan tab masing-masing aplikasi (lihat no 2)", R.drawable.ss1, ContextCompat.getColor(this, R.color.primary_dark)));
+        addSlide(AppIntroFragment.newInstance("Menjalankan aplikasi", "Anda dapat menjalankan aplikasi dengan menekan tombol jalankan pada layar masing-masing aplikasi (lihat no 3), ", R.drawable.ss1, ContextCompat.getColor(this, R.color.primary_dark)));
+        addSlide(AppIntroFragment.newInstance("Memilih menu", "Untuk melihat menu, Anda dapat memilih triple dot pada pojok kanan atas (lihat no 1), menu tersebut juga berfungsi untuk logout dan keluar dari aplikasi", R.drawable.ss1, ContextCompat.getColor(this, R.color.primary_dark)));
         // OPTIONAL METHODS
         // Override bar/separator color.
         //        setBarColor(Color.parseColor("#3F51B5"));

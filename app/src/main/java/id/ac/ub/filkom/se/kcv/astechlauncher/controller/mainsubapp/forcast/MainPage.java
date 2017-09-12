@@ -1,4 +1,4 @@
-package id.ac.ub.filkom.se.kcv.astechlauncher.controller.mainsubapp.medis;
+package id.ac.ub.filkom.se.kcv.astechlauncher.controller.mainsubapp.forcast;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -29,18 +29,18 @@ import id.ac.ub.filkom.se.kcv.astechlauncher.controller.mainapp.About;
 import id.ac.ub.filkom.se.kcv.astechlauncher.controller.mainapp.Help;
 import id.ac.ub.filkom.se.kcv.astechlauncher.controller.mainapp.LoginActivity;
 import id.ac.ub.filkom.se.kcv.astechlauncher.controller.mainapp.MainActivity;
-
+import id.ac.ub.filkom.se.kcv.astechlauncher.*;
 
 public class MainPage extends AppCompatActivity {
-    @BindView(R.id.appmedis_button_acupuncture_launcher)
-    Button buttonAcupuncture;
-    @BindView(R.id.appmedis_button_stroke_launcher)
-    Button buttonStroke;
-    @BindView(R.id.appmedis_button_heart_launcher)
-    Button buttonHeart;
-    @BindView(R.id.appmedis_textswitcher_application_description)
+    @BindView(R.id.appforcast_button_minyak_launcher)
+    Button buttonMinyak;
+    @BindView(R.id.appforcast_button_prediksi_launcher)
+    Button buttonPrediksi;
+    @BindView(R.id.appforcast_button_saham_launcher)
+    Button buttonSaham;
+    @BindView(R.id.appforcast_textswitcher_application_description)
     TextSwitcher applicationShortDescriptionSwitcher;
-    @BindView(R.id.appmedis_imageswitcher_application_logo)
+    @BindView(R.id.appforcast_imageswitcher_application_logo)
     ImageSwitcher applicationLogoSwitcher;
 
 
@@ -54,10 +54,10 @@ public class MainPage extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        super.setContentView(R.layout.appmedis_launcher_mainpage_container);
+        super.setContentView(R.layout.appforcast_container);
         ButterKnife.bind(this);
 
-        final Toolbar toolbar = (Toolbar) super.findViewById(R.id.appmedis_mainpage_toolbar);
+        final Toolbar toolbar = (Toolbar) super.findViewById(R.id.appforcast_mainpage_toolbar);
         super.setSupportActionBar(toolbar);
         final ActionBar actionBar = super.getSupportActionBar();
         if (actionBar != null) {
@@ -76,7 +76,7 @@ public class MainPage extends AppCompatActivity {
 //            });
         }
 
-        this.buttonLauncherWrapper = new Button[]{this.buttonAcupuncture, this.buttonStroke, this.buttonHeart};
+        this.buttonLauncherWrapper = new Button[]{this.buttonMinyak, this.buttonPrediksi, this.buttonSaham};
 
         this.setLogoDescriptionSwitcher();
         this.setLogoSwictcher();
@@ -96,7 +96,7 @@ public class MainPage extends AppCompatActivity {
             }
         });
 
-        this.applicationShortDescriptionSwitcher.setText(super.getResources().getString(R.string.appmedis_short_description));
+        this.applicationShortDescriptionSwitcher.setText(super.getResources().getString(R.string.appforcast_short_description));
     }
 
     private void setLogoSwictcher() {
@@ -109,12 +109,12 @@ public class MainPage extends AppCompatActivity {
                 lp.setMargins(4, 16, 4, 4);
                 lp.gravity = Gravity.CENTER_HORIZONTAL;
                 myImage.setLayoutParams(lp);
-                myImage.setContentDescription(MainPage.super.getResources().getString(R.string.appmedis_avatar_description));
+                myImage.setContentDescription(MainPage.super.getResources().getString(R.string.appforcast_avatar_description));
                 return myImage;
             }
         });
 
-        this.applicationLogoSwitcher.setImageResource(R.drawable.logomedis);
+        this.applicationLogoSwitcher.setImageResource(R.drawable.appforcast);
     }
 
     @Override
@@ -184,7 +184,7 @@ public class MainPage extends AppCompatActivity {
         super.startActivity(intent);
     }
 
-    @OnClick({R.id.appmedis_button_acupuncture_launcher, R.id.appmedis_button_stroke_launcher, R.id.appmedis_button_heart_launcher})
+    @OnClick({R.id.appforcast_button_minyak_launcher, R.id.appforcast_button_prediksi_launcher, R.id.appforcast_button_saham_launcher})
     public void onApplicationLauncherChoose(Button pressedButton)
     {
         for(final Button guessedButton : this.buttonLauncherWrapper)
@@ -194,26 +194,27 @@ public class MainPage extends AppCompatActivity {
                 pressedButton.setSelected(!pressedButton.isSelected());
                 if(pressedButton.isSelected())
                 {
-                    if(pressedButton == this.buttonAcupuncture)
+                    if(pressedButton == this.buttonMinyak)
                     {
-                        this.applicationShortDescriptionSwitcher.setText(super.getResources().getString(R.string.appmedis_acupuncture_short_description));
+                        this.applicationShortDescriptionSwitcher.setText(super.getResources().getString(R.string.appforcast_minyak_short_description));
                         this.applicationLogoSwitcher.setImageResource(R.drawable.logo_akupuntur);
                     }
-                    else if(pressedButton == this.buttonStroke)
+                    else if(pressedButton == this.buttonPrediksi)
                     {
-                        this.applicationShortDescriptionSwitcher.setText(super.getResources().getString(R.string.appmedis_stroke_short_description));
-                        this.applicationLogoSwitcher.setImageResource(R.drawable.logo_stroke);
+                        this.applicationShortDescriptionSwitcher.setText(super.getResources().getString(R.string.appforcast_prediksi_short_description));
+                        this.applicationLogoSwitcher.setImageResource(R.drawable.prediksi_big_logo);
+
                     }
-                    else if(pressedButton == this.buttonHeart)
+                    else if(pressedButton == this.buttonSaham)
                     {
-                        this.applicationShortDescriptionSwitcher.setText(super.getResources().getString(R.string.appmedis_heart_short_description));
+                        this.applicationShortDescriptionSwitcher.setText(super.getResources().getString(R.string.appforcast_saham_short_description));
                         this.applicationLogoSwitcher.setImageResource(R.drawable.logo_heart);
                     }
                 }
                 else
                 {
-                    this.applicationShortDescriptionSwitcher.setText(super.getResources().getString(R.string.appmedis_short_description));
-                    this.applicationLogoSwitcher.setImageResource(R.drawable.logomedis);
+                    this.applicationShortDescriptionSwitcher.setText(super.getResources().getString(R.string.appforcast_short_description));
+                    this.applicationLogoSwitcher.setImageResource(R.drawable.appforcast);
                 }
             }
             else
@@ -223,7 +224,7 @@ public class MainPage extends AppCompatActivity {
         }
     }
 
-    @OnLongClick({R.id.appmedis_button_acupuncture_launcher, R.id.appmedis_button_stroke_launcher, R.id.appmedis_button_heart_launcher})
+    @OnLongClick({R.id.appforcast_button_minyak_launcher, R.id.appforcast_button_prediksi_launcher, R.id.appforcast_button_saham_launcher})
     public boolean onApplicationLauncherPressed(Button pressedButton)
     {
         for(final Button guessedButton : this.buttonLauncherWrapper)
@@ -231,25 +232,25 @@ public class MainPage extends AppCompatActivity {
             if(pressedButton == guessedButton)
             {
                 pressedButton.setSelected(true);
-                if(pressedButton == this.buttonAcupuncture)
+                if(pressedButton == this.buttonMinyak)
                 {
-                    this.applicationShortDescriptionSwitcher.setText(super.getResources().getString(R.string.appmedis_acupuncture_short_description));
+                    this.applicationShortDescriptionSwitcher.setText(super.getResources().getString(R.string.appforcast_minyak_short_description));
                     this.applicationLogoSwitcher.setImageResource(R.drawable.logo_akupuntur);
-                    Toast.makeText(this, "Acupuncture Launch", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, "Oil Prediction Launch", Toast.LENGTH_SHORT).show();
                 }
-                else if(pressedButton == this.buttonStroke)
+                else if(pressedButton == this.buttonPrediksi)
                 {
-                    this.applicationShortDescriptionSwitcher.setText(super.getResources().getString(R.string.appmedis_stroke_short_description));
-                    this.applicationLogoSwitcher.setImageResource(R.drawable.logo_stroke);
-                    final Intent intent = new Intent(this, id.ac.ub.filkom.sekcv.appstroke.controller.MainPage.class);
+                    this.applicationShortDescriptionSwitcher.setText(super.getResources().getString(R.string.appforcast_prediksi_short_description));
+                    this.applicationLogoSwitcher.setImageResource(R.drawable.prediksi);
+                    final Intent intent = new Intent(this, id.ac.ub.filkom.se.kcv.appforecast.controller.MainActivity.class);
                     super.startActivity(intent);
                     super.finish();
                 }
-                else if(pressedButton == this.buttonHeart)
+                else if(pressedButton == this.buttonSaham)
                 {
-                    this.applicationShortDescriptionSwitcher.setText(super.getResources().getString(R.string.appmedis_heart_short_description));
+                    this.applicationShortDescriptionSwitcher.setText(super.getResources().getString(R.string.appforcast_saham_short_description));
                     this.applicationLogoSwitcher.setImageResource(R.drawable.logo_heart);
-                    Toast.makeText(this, "Heart Launch", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, "Holding Prediction Launch", Toast.LENGTH_SHORT).show();
                 }
             }
             else
